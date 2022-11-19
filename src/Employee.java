@@ -44,11 +44,27 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        /*return "Employee details :\n" +
+                "age=" + age +
+                ", birth_year=" + birth_year +
+                ", rate=" + rate +
+                ", monthly_salary=" + monthly_salary +
+                ", name= " + name + '.' ;*/
+        return "We have a new employee :" + name;
+    }
+
     public static void main(String[] args) {
         Employee emp = new Employee();
         emp.setBirth_year(1999);
+        emp.setName("sai");
+        emp.setRate(100);
+        emp.setMonthly_salary(1000);
         emp.age = calculate_age(emp.birth_year);
-        System.out.println(emp.age);
+      //  System.out.println(emp.age);
+       // System.out.println(emp.toString());
     }
     public static int calculate_age(int Dob){
         int current_year = 2022;
