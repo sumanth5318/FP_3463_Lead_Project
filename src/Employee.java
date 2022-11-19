@@ -5,7 +5,12 @@ public class Employee {
     int rate;
     int monthly_salary;
     String name;
-
+    public Employee(String name,int birth_year,int rate,int monthly_salary) {
+        this.name = name;
+        this.birth_year = birth_year;
+        this.rate= rate;
+        this.monthly_salary = monthly_salary;
+    }
     public int getAge() {
         return age;
     }
@@ -54,17 +59,6 @@ public class Employee {
                 ", monthly_salary=" + monthly_salary +
                 ", name= " + name + '.' ;*/
         return "We have a new employee :" + name;
-    }
-
-    public static void main(String[] args) {
-        Employee emp = new Employee();
-        emp.setBirth_year(1999);
-        emp.setName("sai");
-        emp.setRate(100);
-        emp.setMonthly_salary(1000);
-        emp.age = calculate_age(emp.birth_year);
-      //  System.out.println(emp.age);
-       // System.out.println(emp.toString());
     }
     public static int calculate_age(int Dob){
         int current_year = 2022;
