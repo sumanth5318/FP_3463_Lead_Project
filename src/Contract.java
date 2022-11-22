@@ -7,6 +7,16 @@ public class Contract {
     double hourlySalary = 0;
     int accumulatedHours= 0;
     String type = "";
+    public Contract(int nbChildren,boolean married,int bonusPerChildPerMonth,int accumulatedDays,double monthlySalary,double hourlySalary,int accumulatedHours,String type){
+        this.nbChildren = nbChildren;
+        this.married = married;
+        this.bonusPerChildPerMonth = bonusPerChildPerMonth;
+        this.accumulatedDays = accumulatedDays;
+        this.monthlySalary = monthlySalary;
+        this.hourlySalary = hourlySalary;
+        this.accumulatedHours = accumulatedHours;
+        this.type = type;
+    }
 
     public double accumulatedSalary(){
 
