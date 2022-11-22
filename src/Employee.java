@@ -1,10 +1,10 @@
 public class Employee {
 
-    int age;
-    int birth_year;
-    int rate;
-    int monthly_salary;
-    String name;
+    private int age;
+     private int birth_year;
+     private int rate;
+     private int monthly_salary;
+     private String name;
     public Employee(String name,int birth_year,int rate,int monthly_salary) {
         this.name = name;
         this.birth_year = birth_year;

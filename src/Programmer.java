@@ -7,7 +7,7 @@ public class Programmer extends Employee{
     }
     @Override
     public String toString() {
-        return "We have a new Employee :" + name+",Programmer";
+        return "We have a new Employee :" + getName()+",Programmer";
     }
 
     public void setNo_of_projects(int no_of_projects) {
@@ -23,7 +23,8 @@ public class Programmer extends Employee{
     }
     public String description(){
         String info = new String();
-        info += "Name:"+name+"\nAge:"+calculate_age(birth_year)+"\nSerge has an Occupation rate:"+rate+"%.";
+        info += "Name:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\n"+getName()+" has an Occupation rate:"
+                +getBirth_year()+"%.";
         info += "He/She has completed "+no_of_projects +" projects.\n";
         info += "His/Her estimated annual income is "+ annualincome()+".";
         String userinfo = info;

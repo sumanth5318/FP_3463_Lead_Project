@@ -20,6 +20,18 @@ public class Main {
         System.out.println(p1.description());
         System.out.println(p2.description());
         System.out.println(p3.description());
+        Motorbike mb1 = new Motorbike("Kawasaki","Custom Plate","Blue","Race",false);
+        Motorbike mb2 = new Motorbike("Honda","Custom Plate","Black","Not For Race",true);
+        Car vt1 = new Car("Lamborghini", "Custom Plate", "White", "Family","Manual", "Sport");
+        Car vt2 = new Car("BMW", "Custom Plate", "Black", "Family","Automatic","Sedan");
+        Car vt3 = new Car("Renault Clio","Custom Plate","Blue","Family", "Manual", "Hatchback");
+        Car vt4 = new Car("Mazda",  "Custom Plate", "White", "Family", "Automatic","SUV");
+        System.out.println(vt1.toString());
+        System.out.println(vt2.toString());
+        System.out.println(vt3.toString());
+        System.out.println(vt4.toString());
+        System.out.println(mb1.toString());
+        System.out.println(mb2.toString());
 
 
 
