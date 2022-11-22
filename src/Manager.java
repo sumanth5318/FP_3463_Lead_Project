@@ -1,10 +1,12 @@
 public class Manager extends Employee {
     private int no_of_travel_days;
     private int no_of_clients;
-    public Manager(String name,int birth_year,int rate,int monthly_salary,int no_of_clients,int no_of_travell_days) {
-        super(name,birth_year,rate,monthly_salary);
+    Vehicle employeeVehicle;
+    public Manager(String name,int birth_year,int rate,int monthly_salary,int no_of_clients,int no_of_travell_days,Vehicle employeeVehicle) {
+        super(name,birth_year,rate,monthly_salary,employeeVehicle);
         this.no_of_travel_days =no_of_travell_days;
         this.no_of_clients=  no_of_clients;
+        this.employeeVehicle = employeeVehicle;
     }
 
     @Override
@@ -30,8 +32,9 @@ public class Manager extends Employee {
         String info = new String();
        // Vehicle v = new Vehicle();
         info += "\nName:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\nEmployee has a Car:";
+        info += employeeVehicle.toString();
        // info += "\t -make:";
-        info += "\nSerge has an Occupation rate:"+getRate()+"%.";
+        info += "\n"+getName()+" has an Occupation rate:"+getRate()+"%.";
         info += "He/She travelled "+no_of_travel_days +" days and has brought "+no_of_clients+" new clients.\n";
         info += "His/Her estimated annual income is "+ annualincome()+".";
         String userinfo = info;

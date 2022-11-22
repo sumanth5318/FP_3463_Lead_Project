@@ -5,11 +5,15 @@ public class Employee {
      private int rate;
      private int monthly_salary;
      private String name;
-    public Employee(String name,int birth_year,int rate,int monthly_salary) {
+     Vehicle employeeVehicle;
+    public Employee(String name,int birth_year,int rate,int monthly_salary,Vehicle employeeVehicle) {
         this.name = name;
         this.birth_year = birth_year;
         this.rate= rate;
         this.monthly_salary = monthly_salary;
+        this.employeeVehicle = employeeVehicle;
+
+
     }
     public int getAge() {
         return age;

@@ -1,9 +1,14 @@
 public class Programmer extends Employee{
     int no_of_projects;
+    Vehicle employeeVehicle;
+    String name;
 
-    public Programmer(String name,int birth_year,int rate,int monthly_salary,int no_of_projects) {
-        super(name,birth_year,rate,monthly_salary);
+    public Programmer(String name,int birth_year,int rate,int monthly_salary,int no_of_projects,Vehicle employeeVehicle) {
+        super(name,birth_year,rate,monthly_salary,employeeVehicle);
         this.no_of_projects  = no_of_projects;
+        this.employeeVehicle = employeeVehicle;
+
+
     }
     @Override
     public String toString() {
@@ -23,7 +28,17 @@ public class Programmer extends Employee{
     }
     public String description(){
         String info = new String();
-        info += "Name:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\n"+getName()+" has an Occupation rate:"
+
+        info += "Name:"+getName()+"\nAge:"+calculate_age(getBirth_year());
+        if(getName() == "Paul"){
+            info += "\n Employee has a motorbike";
+        }
+        else {
+            info += "\n Employee has a car";
+        }
+        info += employeeVehicle;
+
+        info +="\n"+getName()+" has an Occupation rate:"
                 +getBirth_year()+"%.";
         info += "He/She has completed "+no_of_projects +" projects.\n";
         info += "His/Her estimated annual income is "+ annualincome()+".";
