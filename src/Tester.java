@@ -10,6 +10,11 @@ public class Tester extends Employee {
         super(name,birth_year,rate,monthly_salary,"Tester");
         this.no_of_bugs  = no_of_bugs;
     }
+    public Tester(String name,int birth_year,int rate,int monthly_salary,int no_of_bugs,Vehicle employeeVehicle) {
+        super(name,birth_year,rate,monthly_salary,"Tester",employeeVehicle);
+        this.no_of_bugs  = no_of_bugs;
+        this.employeeVehicle = employeeVehicle;
+    }
     @Override
     public String toString() {
 
