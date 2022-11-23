@@ -38,8 +38,14 @@ public class Management {
         employees.add(new Manager("Serge", 1996, 100, 3000, 30, 4, vt1));
         employees.add(new Manager("Cindy", 1996, 60, 3000, 20, 6, vt2));
         employees.add(new Tester("Pierre", 1995, 90, 3000, 124, mb2));
-
-
+        employees.add(new Programmer("Paul", 1994, 60, 3000, 3, mb1));
+        employees.add(new Programmer("Matt", 1993, 50, 3000, 5, vt4));
+        employees.add(new Programmer("Sarah", 1992, 60, 3000, 3, vt3));
+        for (Employee i : employees) {
+            System.out.println("-------------------------");
+            System.out.println(i);
+            System.out.println("-------------------------");
+        }
     }
 
 }
