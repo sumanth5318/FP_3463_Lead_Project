@@ -8,6 +8,12 @@ public class Manager extends Employee {
         this.no_of_travel_days =no_of_travell_days;
         this.no_of_clients =  no_of_clients;
     }
+    public Manager(String name,int birth_year,int rate,int monthly_salary,int no_of_clients,int no_of_travell_days,Vehicle employeeVehicle) {
+        super(name,birth_year,rate,monthly_salary,"Manager",employeeVehicle);
+        this.no_of_travel_days =no_of_travell_days;
+        this.no_of_clients=  no_of_clients;
+        this.employeeVehicle = employeeVehicle;
+    }
 
     @Override
     public String toString() {
