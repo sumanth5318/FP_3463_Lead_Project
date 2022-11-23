@@ -33,6 +33,14 @@ public class Management {
             employees.add(new Programmer("Sarah", 1992, 60, 3000, 3));
 
         }
+    public void hire_test2(){
+        ArrayList<Employee> employees = new ArrayList<>();
+        employees.add(new Manager("Serge", 1996, 100, 3000, 30, 4, vt1));
+        employees.add(new Manager("Cindy", 1996, 60, 3000, 20, 6, vt2));
+        employees.add(new Tester("Pierre", 1995, 90, 3000, 124, mb2));
+
+
+    }
 
 }
 
