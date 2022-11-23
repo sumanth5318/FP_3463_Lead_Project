@@ -17,6 +17,15 @@ public class Employee {
         this.role = role;
         System.out.println("We have a new Employee: " + getName() + ", a " + getRole());
     }
+    public Employee(String name,int birth_year,int rate,int monthly_salary,String role,Vehicle employeeVehicle) {
+        this.name = name;
+        this.birth_year = birth_year;
+        this.rate= rate;
+        this.monthly_salary = monthly_salary;
+        this.employeeVehicle = employeeVehicle;
+        this.role = role;
+        System.out.println("We have a new Employee: " + getName() + ", a " + getRole());
+    }
     public int getAge() {
         return age;
     }
