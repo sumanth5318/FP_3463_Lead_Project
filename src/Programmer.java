@@ -29,17 +29,17 @@ public class Programmer extends Employee{
     public String description(){
         String info = new String();
 
-        info += "Name:"+getName()+"\nAge:"+calculate_age(getBirth_year());
-        if(getName() == "Paul"){
-            info += "\n Employee has a motorbike";
+        info += "\nName:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\nEmployee has a Motorbike";
+        /*if(getName() == "Paul"){
+            info += "\nEmployee has a motorbike";
         }
         else {
-            info += "\n Employee has a car";
-        }
-        info += employeeVehicle;
+            info += "\nEmployee has a car";
+        }*/
+        info += employeeVehicle.toString();
 
         info +="\n"+getName()+" has an Occupation rate:"
-                +getBirth_year()+"%.";
+                +getRate()+"%.";
         info += "He/She has completed "+no_of_projects +" projects.\n";
         info += "His/Her estimated annual income is "+ annualincome()+".";
         String userinfo = info;

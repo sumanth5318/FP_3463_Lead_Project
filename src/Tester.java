@@ -24,8 +24,8 @@ public class Tester extends Employee {
     }
     public String description(){
         String info = new String();
-        info += "Name:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\nEmployee has a motorcyle";
-        info += employeeVehicle;
+        info += "\nName:"+getName()+"\nAge:"+calculate_age(getBirth_year())+"\nEmployee has a motorbike";
+        info += employeeVehicle.toString();
         info +="\n"+getName()+" has an Occupation rate:"+getRate()+"%.";
         info += "He/She corrected "+getNo_of_bugs() +" bugs\n";
         info += "His/Her estimated annual income is "+ annualincome()+".";

@@ -9,8 +9,8 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return   "\n-make=" + make  + "\n-plate=" + plate + "\n-color=" + color + "\n-category=" + category + "\n-gear="
-                + gear +"\n-type="+type;
+        return   "\n\t-make:" + make  + "\n\t-plate:" + plate + "\n\t-color:" + color + "\n\t-category:" + category + "\n\t-gear:"
+                + gear +"\n\t-type:"+type;
     }
 
     public String getGear() {
