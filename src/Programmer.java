@@ -8,6 +8,11 @@ public class Programmer extends Employee{
         super(name,birth_year,rate,monthly_salary,"Programmer");
         this.no_of_projects  = no_of_projects;
     }
+    public Programmer(String name,int birth_year,int rate,int monthly_salary,int no_of_projects,Vehicle employeeVehicle) {
+        super(name,birth_year,rate,monthly_salary,"Programmer",employeeVehicle);
+        this.no_of_projects  = no_of_projects;
+        this.employeeVehicle = employeeVehicle;
+    }
     @Override
     public String toString() {
 
