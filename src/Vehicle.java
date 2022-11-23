@@ -9,13 +9,13 @@ public class Vehicle {
         this.color = color;
         this.category = category;
     }
-    //@Override
-  /*  public String toString() {
-        return  "make='" + make + '\'' +
-                ", plate='" + plate + '\'' +
-                ", color='" + color + '\'' +
-                ", category='" + category + '\'';
-    }*/
+    @Override
+    public String toString() {
+        return  "\t-make:" + make +
+                "\n\t-plate:" + plate+
+                "\n\t-color:" + color+
+                "\n\t-category:" + category;
+    }
 
     public String getMake() {
         return make;

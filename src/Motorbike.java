@@ -7,7 +7,7 @@ public class Motorbike extends Vehicle{
 
     @Override
     public String toString() {
-        return "\n\t-make:" + make  + "\n\t-plate:" + plate + "\n\t-color:" + color + "\n\t-category:" + category+ "\n\t-sidecar:"+(sidecar?"has side car":"no side car");
+        return "\nEmployee has a motorbike\n"+super.toString() +"\n\t-sidecar:"+(sidecar?"has side car":"no side car");
     }
 
     public boolean isSidecar() {

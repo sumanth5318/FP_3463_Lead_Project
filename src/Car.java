@@ -9,7 +9,7 @@ public class Car extends Vehicle{
 
     @Override
     public String toString() {
-        return   "\n\t-make:" + make  + "\n\t-plate:" + plate + "\n\t-color:" + color + "\n\t-category:" + category + "\n\t-gear:"
+        return   "\nEmployee has a car \n"+ super.toString() + "\n\t-gear:"
                 + gear +"\n\t-type:"+type;
     }
 
