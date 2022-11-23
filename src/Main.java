@@ -4,10 +4,10 @@ public class Main {
         Management management = new Management();
         management.hire_test1();
 
-// Test part 2
-//        System.out.println("Test 2:");
-//        System.out.println("Employees description: ");
-//        management.hire_test2();
+ //Test part 2
+        System.out.println("Test 2:");
+        System.out.println("Employees description: ");
+        management.hire_test2();
 
 // Test part 3
 //        System.out.println("Test 3: ");
