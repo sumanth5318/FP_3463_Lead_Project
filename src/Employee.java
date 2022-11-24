@@ -65,6 +65,10 @@ public class Employee {
         return name;
     }
 
+    public Contract getContract() {
+        return contract;
+    }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -74,10 +78,18 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "\nName: " + getName() + ", a " + getRole() + "\nAge: " + calculate_age(getBirth_year()) + employeeVehicle;
+        return "Name: " + getName() + ", a " + getRole() + "\nAge: " + calculate_age(getBirth_year()) + employeeVehicle+"\n";
     }
     public static int calculate_age(int Dob){
         int current_year = 2022;
         return current_year - Dob;
     }
+    public void signContract(Contract contract){
+       this.contract = contract;
+
+    }
+    public String contractInfo(){
+        return getName() + " is a " + getRole()+".";
+    }
+
 }
