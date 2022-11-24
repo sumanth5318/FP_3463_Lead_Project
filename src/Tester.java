@@ -18,8 +18,8 @@ public class Tester extends Employee {
     @Override
     public String toString() {
 
-       return super.toString() +"\nHe/She corrected "+no_of_bugs +" bugs "+
-               "His/Her estimated annual income is "+ annualincome();
+       return super.toString() +getName()+" has an occupation rate:"+getRate()+"%.He/She corrected "+no_of_bugs +" bugs "+
+               "His/Her estimated annual income is $"+ annualincome();
     }
 
     public int getNo_of_bugs() {
