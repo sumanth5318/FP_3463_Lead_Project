@@ -40,6 +40,17 @@ public class Permanent extends Contract{
     public void setAccumulatedsalary(double accumulatedsalary) {
         this.accumulatedsalary = accumulatedsalary;
     }
+    @Override
+    public String toString() {
+        return "he is"+ (isMarried()?" married":" not married") +" and he/she has " +getNbChildren()+
+                " children. He/She has worked for "+ getAccumulatedDays()+
+                " days and upon contract his/her monthly salary is "+ getMonthlySalary();
+    }
+    public double accumulatedsalary(){
+        accumulatedsalary = getAccumulatedDays()*(getMonthlySalary()*getBonusPerChildPerMonth()*getNbChildren())*12;
+        return accumulatedsalary;
+    }
+
 
 
 }
