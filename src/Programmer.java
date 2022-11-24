@@ -1,5 +1,5 @@
 public class Programmer extends Employee{
-    int no_of_projects;
+    private int no_of_projects;
     Vehicle employeeVehicle;
     String name;
 
@@ -16,8 +16,8 @@ public class Programmer extends Employee{
     @Override
     public String toString() {
 
-        return super.toString() +"\nHe/She completed "+ no_of_projects +
-        "His/Her estimated annual income is "+ annualincome();
+        return super.toString() +getName()+" has an occupation rate:"+getRate()+"%.He/She completed "+ no_of_projects +" projects."+
+        "His/Her estimated annual income is $"+ annualincome();
     }
 
     public void setNo_of_projects(int no_of_projects) {
