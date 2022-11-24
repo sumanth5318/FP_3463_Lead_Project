@@ -27,9 +27,9 @@ public class Programmer extends Employee{
     public int getNo_of_projects() {
         return no_of_projects;
     }
-    public int annualincome(){
+    public double annualincome(){
         int GAIN_FACTOR_PROJECTS = 200;
-        return GAIN_FACTOR_PROJECTS * no_of_projects;
+        return (GAIN_FACTOR_PROJECTS * no_of_projects)+(getMonthly_salary() * 12);
     }
 
 }

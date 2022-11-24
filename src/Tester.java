@@ -25,9 +25,9 @@ public class Tester extends Employee {
     public int getNo_of_bugs() {
         return no_of_bugs;
     }
-    public int annualincome(){
+    public double annualincome(){
         int GAIN_FACTOR_Error = 10;
-        return GAIN_FACTOR_Error * getNo_of_bugs();
+        return (GAIN_FACTOR_Error * getNo_of_bugs())+(getMonthly_salary() * 12);
     }
 
 }

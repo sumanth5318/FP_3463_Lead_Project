@@ -41,8 +41,11 @@ public class Employee {
         this.birth_year = birth_year;
     }
 
-    public int getMonthly_salary() {
-        return monthly_salary;
+    public double getMonthly_salary() {
+        if(contract!=null){
+            return contract.accumulatedSalary();
+        }
+        return 0;
     }
 
     public void setMonthly_salary(int monthly_salary) {
@@ -52,7 +55,6 @@ public class Employee {
     public String getRole() {
         return role;
     }
-
     public int getRate() {
         return rate;
     }
@@ -72,10 +74,6 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
-    public String signcontract(Contract contract){
-        return "";
-    }
-
     @Override
     public String toString() {
         return "Name: " + getName() + ", a " + getRole() + "\nAge: " + calculate_age(getBirth_year()) + employeeVehicle+"\n";
