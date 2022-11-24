@@ -17,8 +17,9 @@ public class Manager extends Employee {
 
     @Override
     public String toString() {
-        return super.toString() +"\nHe/She travelled "+no_of_travel_days +" days and has brought "+no_of_clients+" new clients."+
-                "His/Her estimated annual income is "+ annualincome();
+        return super.toString() +getName()+" has an occupation rate:"+getRate()+"%."+"He/She travelled "+
+                no_of_travel_days +" days and has brought "+no_of_clients+" new clients."+
+                "His/Her estimated annual income is $"+ annualincome();
     }
     public int getNo_of_clients() { return no_of_clients; }
     public int getNo_travell_days() {return no_of_travel_days; }
