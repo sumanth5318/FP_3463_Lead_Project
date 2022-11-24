@@ -1,6 +1,45 @@
 public class Permanent extends Contract{
-
-    public Permanent(int nbChildren,boolean married,int bonusPerChildPerMonth,int accumulatedDays,double monthlySalary,double hourlySalary,int accumulatedHours,String type){
-        super(nbChildren,married,bonusPerChildPerMonth,accumulatedDays,monthlySalary,hourlySalary,accumulatedHours,type);
+    private int nbChildren;
+    private boolean married = true;
+    private int bonusPerChildPerMonth = 0;
+    private int accumulatedDays = 0;
+    private double monthlySalary = 0;
+    private double accumulatedsalary;
+    public Permanent(int nbChildren,boolean married,double monthlySalary,int bonusPerChildPerMonth,int accumulatedDays){
+        this.nbChildren = nbChildren;
+        this.married = married;
+        this.bonusPerChildPerMonth = bonusPerChildPerMonth;
+        this.accumulatedDays = accumulatedDays;
+        this.monthlySalary = monthlySalary;
     }
+
+    public int getNbChildren() {
+        return nbChildren;
+    }
+
+    public double getMonthlySalary() {
+        return monthlySalary;
+    }
+
+    public int getAccumulatedDays() {
+        return accumulatedDays;
+    }
+
+    public int getBonusPerChildPerMonth() {
+        return bonusPerChildPerMonth;
+    }
+
+    public boolean isMarried() {
+        return married;
+    }
+
+    public double getAccumulatedsalary() {
+        return accumulatedsalary;
+    }
+
+    public void setAccumulatedsalary(double accumulatedsalary) {
+        this.accumulatedsalary = accumulatedsalary;
+    }
+
+
 }
