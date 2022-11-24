@@ -1,11 +1,12 @@
-public class Permanent extends Contract{
+public class Permanent implements Contract {
     private int nbChildren;
     private boolean married = true;
     private int bonusPerChildPerMonth = 0;
     private int accumulatedDays = 0;
     private double monthlySalary = 0;
     private double accumulatedsalary;
-    public Permanent(int nbChildren,boolean married,double monthlySalary,int bonusPerChildPerMonth,int accumulatedDays){
+
+    public Permanent(int nbChildren, boolean married, double monthlySalary, int bonusPerChildPerMonth, int accumulatedDays) {
         this.nbChildren = nbChildren;
         this.married = married;
         this.bonusPerChildPerMonth = bonusPerChildPerMonth;
@@ -40,17 +41,18 @@ public class Permanent extends Contract{
     public void setAccumulatedsalary(double accumulatedsalary) {
         this.accumulatedsalary = accumulatedsalary;
     }
+
     @Override
     public String toString() {
-        return "he is"+ (isMarried()?" married":" not married") +" and he/she has " +getNbChildren()+
-                " children. He/She has worked for "+ getAccumulatedDays()+
-                " days and upon contract his/her monthly salary is "+ getMonthlySalary();
-    }
-    public double accumulatedsalary(){
-        accumulatedsalary = getAccumulatedDays()*(getMonthlySalary()*getBonusPerChildPerMonth()*getNbChildren())*12;
-        return accumulatedsalary;
+        return "he is" + (isMarried() ? " married" : " not married") + " and he/she has " + getNbChildren() +
+                " children. He/She has worked for " + getAccumulatedDays() +
+                " days and upon contract his/her monthly salary is " + getMonthlySalary();
     }
 
+    public double accumulatedSalary() {
+        accumulatedsalary = (getAccumulatedDays() * (getMonthlySalary() + getBonusPerChildPerMonth()))/20;
+        return accumulatedsalary;
+    }
 
 
 }

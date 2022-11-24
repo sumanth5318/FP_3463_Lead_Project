@@ -1,4 +1,4 @@
-public class Temporary extends Contract{
+public class Temporary implements Contract{
     private double hourlySalary = 0;
     private int accumulatedHours= 0;
     private double accumulatedsalary;
@@ -27,8 +27,8 @@ public class Temporary extends Contract{
     public String toString() {
         return  "he is a temporary employee with "+getHourlySalary()+" hourly salary and he has worked for "+getAccumulatedHours()+" hours.";
     }
-    public double accumulatedsalary(){
-        accumulatedsalary = getHourlySalary()*getAccumulatedHours()*12;
+    public double accumulatedSalary(){
+        accumulatedsalary = getHourlySalary()*getAccumulatedHours();
         return accumulatedsalary;
     }
 }
