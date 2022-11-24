@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8b4e824-0ff8-4b18-a551-c6e1ca17bbf9" name="Changes" comment="contract class created">
-      <change beforePath="$PROJECT_DIR$/src/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Employee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Manager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Manager.java" afterDir="false" />
+    <list default="true" id="f8b4e824-0ff8-4b18-a551-c6e1ca17bbf9" name="Changes" comment="annualsalary is calculated for permanent and temporary employees">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Contract.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Contract.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Management.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Management.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Permanent.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Permanent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Temporary.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Temporary.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,6 +48,15 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="FP_3463_Lead_Project" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -89,7 +101,84 @@
       <option name="project" value="LOCAL" />
       <updated>1669137030807</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="got test2 part output">
+      <created>1669243174696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1669243174696</updated>
+    </task>
+    <task id="LOCAL-00007" summary="hiretest3 called in main">
+      <created>1669325281153</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1669325281153</updated>
+    </task>
+    <task id="LOCAL-00008" summary="testcases for hiretest3 is created">
+      <created>1669325439228</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1669325439228</updated>
+    </task>
+    <task id="LOCAL-00009" summary="getter and setter for contract variable created">
+      <created>1669325698555</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1669325698555</updated>
+    </task>
+    <task id="LOCAL-00010" summary="to string is modified">
+      <created>1669327615861</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327615861</updated>
+    </task>
+    <task id="LOCAL-00011" summary="to string is modified">
+      <created>1669327625327</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327625327</updated>
+    </task>
+    <task id="LOCAL-00012" summary="to string is modified">
+      <created>1669327633959</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327633959</updated>
+    </task>
+    <task id="LOCAL-00013" summary="permanent is created and encapsulated">
+      <created>1669327780140</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327780140</updated>
+    </task>
+    <task id="LOCAL-00014" summary="tostring is modified in tester">
+      <created>1669327812741</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327812741</updated>
+    </task>
+    <task id="LOCAL-00015" summary="tostring is created in permanent">
+      <created>1669327887546</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1669327887546</updated>
+    </task>
+    <task id="LOCAL-00016" summary="annualsalary is calculated for permanent and temporary employees">
+      <created>1669331641159</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1669331641159</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -109,6 +198,15 @@
     <MESSAGE value="Programmer class is created and encapsulated" />
     <MESSAGE value="Tester class is created and encapsulated" />
     <MESSAGE value="contract class created" />
-    <option name="LAST_COMMIT_MESSAGE" value="contract class created" />
+    <MESSAGE value="got test2 part output" />
+    <MESSAGE value="hiretest3 called in main" />
+    <MESSAGE value="testcases for hiretest3 is created" />
+    <MESSAGE value="getter and setter for contract variable created" />
+    <MESSAGE value="to string is modified" />
+    <MESSAGE value="permanent is created and encapsulated" />
+    <MESSAGE value="tostring is modified in tester" />
+    <MESSAGE value="tostring is created in permanent" />
+    <MESSAGE value="annualsalary is calculated for permanent and temporary employees" />
+    <option name="LAST_COMMIT_MESSAGE" value="annualsalary is calculated for permanent and temporary employees" />
   </component>
 </project>

@@ -12,9 +12,9 @@ public class Management {
     public void hire_test1() {
         ArrayList<Employee> employees = new ArrayList<>();
         employees.add(new Manager("Serge", 1996, 100, 3000, 30, 4));
-        employees.add(new Manager("Cindy", 1996, 60, 3000, 20, 6));
-        employees.add(new Tester("Pierre", 1995, 90, 3000, 124));
+        employees.add(new Manager("Cindy", 1996, 80, 3000, 20, 6));
         employees.add(new Programmer("Paul", 1994, 60, 3000, 3));
+        employees.add(new Tester("Pierre", 1995, 90, 3000, 124));
         employees.add(new Programmer("Matt", 1993, 50, 3000, 5));
         employees.add(new Programmer("Sarah", 1992, 60, 3000, 3));
     }
@@ -23,8 +23,8 @@ public class Management {
         ArrayList<Employee> employees = new ArrayList<>();
         employees.add(new Manager("Serge", 1996, 100, 3000, 30, 4, vt1));
         employees.add(new Manager("Cindy", 1996, 60, 3000, 20, 6, vt2));
-        employees.add(new Tester("Pierre", 1995, 90, 3000, 124, mb2));
         employees.add(new Programmer("Paul", 1994, 60, 3000, 3, mb1));
+        employees.add(new Tester("Pierre", 1995, 90, 3000, 124, mb2));
         employees.add(new Programmer("Matt", 1993, 50, 3000, 5, vt4));
         employees.add(new Programmer("Sarah", 1992, 60, 3000, 3, vt3));
         for (Employee i : employees) {
@@ -39,8 +39,8 @@ public class Management {
         ArrayList<Employee> employees = new ArrayList<>();
         Manager Serge = new Manager("Serge", 1996, 100, 3000, 30, 4, vt1);
         Manager Cindy = new Manager("Cindy", 1996, 60, 3000, 20, 6, vt2);
-        Tester Pierre = new Tester("Pierre", 1995, 90, 3000, 124, mb2);
         Programmer Paul = new Programmer("Paul", 1994, 60, 3000, 3, mb1);
+        Tester Pierre = new Tester("Pierre", 1995, 90, 3000, 124, mb2);
         Programmer Matt = new Programmer("Matt", 1993, 50, 3000, 5, vt4);
         Programmer Sarah = new Programmer("Sarah", 1992, 60, 3000, 3, vt3);
         Permanent p1 = new Permanent(2, true, 6000.00, 200, 17);
