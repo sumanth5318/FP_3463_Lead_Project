@@ -8,6 +8,8 @@ public class Employee {
      private String role;
      Vehicle employeeVehicle;
      Contract contract;
+     final int max_rate = 100;
+     final int min_rate = 10;
 
     public Employee(String name, int birth_year, int rate, int monthly_salary, String role) {
         this.name = name;
@@ -56,7 +58,13 @@ public class Employee {
         return role;
     }
     public int getRate() {
-        return rate;
+        if(this.rate>max_rate){
+            return max_rate;
+        } else if (this.rate<min_rate) {
+            return min_rate;
+        }else {
+            return rate;
+        }
     }
 
     public void setRate(int rate) {
