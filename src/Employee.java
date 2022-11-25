@@ -1,15 +1,15 @@
 public class Employee {
 
     private int age;
-     private int birth_year;
-     private int rate;
-     private int monthly_salary;
-     private String name;
-     private String role;
-     Vehicle employeeVehicle;
-     Contract contract;
-     final int max_rate = 100;
-     final int min_rate = 10;
+    private int birth_year;
+    private int rate;
+    private int monthly_salary;
+    private String name;
+    private String role;
+    Vehicle employeeVehicle;
+    Contract contract;
+    final int max_rate = 100;
+    final int min_rate = 10;
 
     public Employee(String name, int birth_year, int rate, int monthly_salary, String role) {
         this.name = name;
@@ -19,18 +19,21 @@ public class Employee {
         this.role = role;
         System.out.println("We have a new Employee: " + getName() + ", a " + getRole());
     }
-    public Employee(String name,int birth_year,int rate,int monthly_salary,String role,Vehicle employeeVehicle) {
+
+    public Employee(String name, int birth_year, int rate, int monthly_salary, String role, Vehicle employeeVehicle) {
         this.name = name;
         this.birth_year = birth_year;
-        this.rate= rate;
+        this.rate = rate;
         this.monthly_salary = monthly_salary;
         this.employeeVehicle = employeeVehicle;
         this.role = role;
         System.out.println("We have a new Employee: " + getName() + ", a " + getRole());
     }
+
     public int getAge() {
         return age;
     }
+
     public void setAge(int age) {
         this.age = age;
     }
@@ -44,7 +47,7 @@ public class Employee {
     }
 
     public double getMonthly_salary() {
-        if(contract!=null){
+        if (contract != null) {
             return contract.accumulatedSalary();
         }
         return 0;
@@ -57,12 +60,13 @@ public class Employee {
     public String getRole() {
         return role;
     }
+
     public int getRate() {
-        if(this.rate>max_rate){
+        if (this.rate > max_rate) {
             return max_rate;
-        } else if (this.rate<min_rate) {
+        } else if (this.rate < min_rate) {
             return min_rate;
-        }else {
+        } else {
             return rate;
         }
     }
@@ -82,20 +86,24 @@ public class Employee {
     public void setName(String name) {
         this.name = name;
     }
+
     @Override
     public String toString() {
-        return "Name: " + getName() + ", a " + getRole() + "\nAge: " + calculate_age(getBirth_year()) + employeeVehicle+"\n";
+        return "Name: " + getName() + ", a " + getRole() + "\nAge: " + calculate_age(getBirth_year()) + employeeVehicle + "\n";
     }
-    public static int calculate_age(int Dob){
+
+    public static int calculate_age(int Dob) {
         int current_year = 2022;
         return current_year - Dob;
     }
-    public void signContract(Contract contract){
-       this.contract = contract;
+
+    public void signContract(Contract contract) {
+        this.contract = contract;
 
     }
-    public String contractInfo(){
-        return getName() + " is a " + getRole()+".";
+
+    public String contractInfo() {
+        return getName() + " is a " + getRole() + ".";
     }
 
 }

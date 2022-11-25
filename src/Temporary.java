@@ -1,10 +1,11 @@
-public class Temporary implements Contract{
+public class Temporary implements Contract {
     private double hourlySalary = 0;
-    private int accumulatedHours= 0;
+    private int accumulatedHours = 0;
     private double accumulatedsalary;
-    public Temporary(double hourlySalary,int accumulatedHours){
+
+    public Temporary(double hourlySalary, int accumulatedHours) {
         this.hourlySalary = hourlySalary;
-        this.accumulatedHours =accumulatedHours;
+        this.accumulatedHours = accumulatedHours;
     }
 
     public double getHourlySalary() {
@@ -25,10 +26,11 @@ public class Temporary implements Contract{
 
     @Override
     public String toString() {
-        return  "he is a temporary employee with "+getHourlySalary()+" hourly salary and he has worked for "+getAccumulatedHours()+" hours.";
+        return "he is a temporary employee with " + getHourlySalary() + " hourly salary and he has worked for " + getAccumulatedHours() + " hours.";
     }
-    public double accumulatedSalary(){
-        accumulatedsalary = getHourlySalary()*getAccumulatedHours();
+
+    public double accumulatedSalary() {
+        accumulatedsalary = getHourlySalary() * getAccumulatedHours();
         return accumulatedsalary;
     }
 }

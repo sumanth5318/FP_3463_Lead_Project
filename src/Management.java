@@ -71,7 +71,7 @@ public class Management {
         System.out.println("-------------------------");
         for (Employee item : employees) {
             Contract contract = item.getContract();
-            System.out.println(item.contractInfo()+contract);
+            System.out.println(item.contractInfo() + contract);
         }
         System.out.println("-------------------------");
         Permanent p5 = new Permanent(1, true, 5000, 200, 30);
@@ -81,7 +81,7 @@ public class Management {
         System.out.println("-------------------------");
         for (Employee item : employees) {
             Contract contract = item.getContract();
-            System.out.println(item.contractInfo()+contract);
+            System.out.println(item.contractInfo() + contract);
         }
         System.out.println("-------------------------");
     }

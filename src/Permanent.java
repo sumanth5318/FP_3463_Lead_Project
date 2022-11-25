@@ -50,7 +50,7 @@ public class Permanent implements Contract {
     }
 
     public double accumulatedSalary() {
-        accumulatedsalary = (getAccumulatedDays() * (getMonthlySalary() + getBonusPerChildPerMonth()))/20;
+        accumulatedsalary = (getAccumulatedDays() * (getMonthlySalary() + getBonusPerChildPerMonth())) / 20;
         return accumulatedsalary;
     }
 
